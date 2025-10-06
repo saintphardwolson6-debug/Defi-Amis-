@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+:root {
+  --pink: #ff3b6b;
+  --blue: #007bff;
+  --bg: #0f1724;
+  --white: #fff;
+  --gray: #b4b8c5;
+  --radius: 14px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: var(--bg);
+  color: var(--white);
+  text-align: center;
+  padding: 30px 20px;
+}
+
+header {
+  margin-bottom: 40px;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  color: var(--gray);
+  font-size: 1rem;
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  margin-bottom: 50px;
+}
+
+.version {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: var(--radius);
+  padding: 25px;
+  max-width: 350px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.4);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.version:hover {
+  transform: scale(1.04);
+  box-shadow: 0 6px 30px rgba(0,0,0,0.5);
+}
+
+.version img {
+  width: 100%;
+  border-radius: var(--radius);
+  margin-bottom: 15px;
+}
+
+.version h2 {
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+}
+
+.version p {
+  color: var(--gray);
+  font-size: 0.95rem;
+  margin-bottom: 18px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 12px 20px;
+  border-radius: var(--radius);
+  font-weight: 700;
+  cursor: pointer;
+  border: none;
+  transition: 0.3s;
+  font-size: 1rem;
+}
+
+.btn.blue {
+  background: linear-gradient(90deg, #007bff, #00bfff);
+  color: white;
+}
+
+.btn.pink {
+  background: linear-gradient(90deg, #ff3b6b, #ff7aa2);
+  color: white;
+}
+
+.btn:hover {
+  opacity: 0.9;
+}
+
+.faq {
+  max-width: 800px;
+  margin: auto;
+  text-align: left;
+}
+
+.faq h3 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+details {
+  background: rgba(255,255,255,0.05);
+  border-radius: var(--radius);
+  padding: 15px;
+  margin-bottom: 12px;
+}
+
+details summary {
+  font-weight: 600;
+  cursor: pointer;
+}
+
+footer {
+  margin-top: 40px;
+  color: var(--gray);
+}
+
+.accent {
+  color: var(--pink);
+}
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(15px);
+  animation: fadeIn 1s forwards;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media(max-width: 720px) {
+  main {
+    flex-direction: column;
+    align-items: center;
+  }
+}
