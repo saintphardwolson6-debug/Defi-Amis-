@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Défi-Amis — Choisis ta version</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1 class="fade-in">🎮 Bienvenue sur <span class="accent">Défi-Amis</span></h1>
+    <p class="subtitle fade-in">Le jeu social qui révèle qui te connaît vraiment</p>
+  </header>
+
+  <main>
+    <section class="version free fade-in">
+      <img src="assets/defi-amis.png" alt="Défi-Amis" />
+      <h2>Défi-Amis (Gratuit)</h2>
+      <p>Version simple, fun et rapide ! Crée un défi pour tester tes amis sans inscription.</p>
+      <button onclick="window.location.href='links/defi-amis-v1/index.html'" class="btn blue">Jouer Gratuitement</button>
+    </section>
+
+    <section class="version premium fade-in">
+      <img src="assets/defi-amis-plus.png" alt="Défi-Amis+" />
+      <h2>Défi-Amis+</h2>
+      <p>Version premium avec avatars, classement, et fonctionnalités exclusives. Aide via MonCash ou natCash.</p>
+      <button onclick="window.location.href='links/defi-amis-plus/index.html'" class="btn pink">Accéder à Défi-Amis+</button>
+    </section>
+  </main>
+
+  <section class="faq fade-in">
+    <h3>FAQ — Questions fréquentes</h3>
+    <details>
+      <summary>Comment jouer à Défi-Amis ?</summary>
+      <p>Il suffit de créer un défi, répondre à quelques questions, puis partager ton lien avec tes amis. Ils tenteront de deviner tes réponses !</p>
+    </details>
+    <details>
+      <summary>Comment accéder à Défi-Amis+ ?</summary>
+      <p>Envoie 50 HTG sur natCash/MonCash. Tu recevras un code à entrer pour débloquer l'accès premium.</p>
+    </details>
+    <details>
+      <summary>Mes données sont-elles sauvegardées ?</summary>
+      <p>Toutes les données sont locales à ton appareil. Rien n’est stocké sur un serveur.</p>
+    </details>
+  </section>
+
+  <footer>
+    <p>© 2025 <strong>Défi-Amis</strong> | Conçu par <span class="accent">Tchoulo</span> 🔥</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
